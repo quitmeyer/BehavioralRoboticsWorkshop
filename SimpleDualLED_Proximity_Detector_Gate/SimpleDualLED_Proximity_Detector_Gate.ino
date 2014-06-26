@@ -9,7 +9,7 @@
 // This example shows one way of using an LED as a light sensor.
 // You will need to wire up your components as such:
 //
-//           + digital4
+//           + digital2
 //           |
 //           <
 //           > 100 ohm resistor // i don't use no resistor!
@@ -21,7 +21,7 @@
 //         -----
 //           |
 //           |
-//           + digital5
+//           + digital3
 //
 // What we are going to do is apply a positive voltage at digital2 and
 // a low voltage at digital3. This is backwards for the LED, current will
@@ -41,10 +41,11 @@
 // (Though a nice idea, this implementation is flawed because the refresh
 // rate gets too long in the dark and it flickers disturbingly.)
 //
-#define LED_N_SIDE 4
-#define LED_P_SIDE 5
+#define LED_N_SIDE 2
+#define LED_P_SIDE 3
 
 int darkamount = 0;
+
 
 void setup()
 {}
